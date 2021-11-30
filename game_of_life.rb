@@ -40,8 +40,8 @@ class GameOfLive
     print "\n\n"
     print_matriz(@init)
     print "\n\n"
-    (0..@height - 2).each do |h|
-      (0..@width - 2).each do |w|
+    (0..@height - 1).each do |h|
+      (0..@width - 1).each do |w|
         cells_rules(h, w, neighbors(h, w))
       end
     end
@@ -54,10 +54,10 @@ class GameOfLive
       (-1..1).each do |w| # width x/b
         a = hei + h
         b = wid + w
-        cells_around += @matrix[a][b] if a >= 0 || b >= 0
+        cells_around += @init[a][b] if a >= 0 && b >= 0 && a < @height && b < @width
       end
     end
-    cells_around -= @matrix[hei][wid]
+    cells_around -= @init[hei][wid]
   end
 
   def cells_rules(hei, wid, neighbors)
