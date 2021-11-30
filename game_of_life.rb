@@ -21,4 +21,17 @@ class GameOfLive
       end
     end
   end
+
+  def neighbors(hei, wid)
+    cells_around = 0
+    (-1..1).each do |h| # height y/a
+      (-1..1).each do |w| # width x/b
+        a = hei + h
+        b = wid + w
+        cells_around += @matrix[a][b] if a >= 0 || b >= 0
+      end
+    end
+    cells_around -= @matrix[hei][wid]
+  end
+
 end
