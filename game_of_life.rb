@@ -72,3 +72,12 @@ class GameOfLive
                          end
   end
 end
+
+puts "Chose your height: "
+userHeight = gets
+puts "Choose your width: "
+userWidth = gets
+
+newGame = GameOfLive.new(userHeight.to_i,userWidth.to_i)
+
+newGame.next_generation
