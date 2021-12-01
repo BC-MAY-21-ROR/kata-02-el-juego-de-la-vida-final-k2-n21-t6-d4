@@ -85,7 +85,8 @@ Generation 2:
 
 ## Setup
 <img src ="/badges/rubycritic_badge_score.svg">
-En [este elnace](setup/README.md) se describen los pasos necesarios para ejecutar/probar este proyecto.
+
+En [este enlace](setup/README.md) se describen los pasos necesarios para ejecutar/probar este proyecto.
 
 ## Resources
 [Encuentra aquí una lista completa de recursos de ayuda](https://github.com/bright-coders/commons/tree/master/topics/resources)
