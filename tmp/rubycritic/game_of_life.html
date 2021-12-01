@@ -68,15 +68,15 @@
           </div>
           <div class="code-statistics col-md-11">
             <div class="col-md-3">
-              <div><span class="metric">74</span><small> lines of codes</small></div>
+              <div><span class="metric">83</span><small> lines of codes</small></div>
               <div><span class="metric">6</span><small> methods</small></div>
             </div>
             <div class="col-md-3">
-              <div><span class="metric">15.2</span><small> complexity/method</small></div>
-              <div><span class="metric">5</span><small> churn</small></div>
+              <div><span class="metric">16.4</span><small> complexity/method</small></div>
+              <div><span class="metric">6</span><small> churn</small></div>
             </div>
             <div class="col-md-3">
-              <div><span class="metric">91.23</span><small> complexity</small></div>
+              <div><span class="metric">98.46</span><small> complexity</small></div>
               <div><span class="metric">0</span><small> duplications</small></div>
             </div>
           </div>
@@ -88,7 +88,7 @@
             <li><a href="#" id="toggle-code" class="toggle-button button">code</a></li>
             <li class="active">
               <a href="#" id="toggle-smells" class="toggle-button button">
-                22
+                23
                 smells
               </a>
             </li>
@@ -159,7 +159,7 @@ class GameOfLive
     cells_around -= @init[hei][wid]
   end
 
-  def cells_rules(hei, wid, neighbors)
+  def cells_rules(hei, wid, neighbors)<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="http://docs.seattlerb.org/flog/" target="_blank"><b>HighComplexity</b></a>        </span>      </div>      <span>GameOfLive#cells_rules has a flog score of 25</span>          </div>  </li></ol>
     @future[hei][wid ] = if @init[hei][wid] == 1 &amp;&amp; neighbors &lt; 2<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>GameOfLive#cells_rules calls '@init[hei]' 4 times</span>              <span>Locations:</span>                  <a href="game_of_life.html#L64" class="js-smell-location">0</a>                  <a href="game_of_life.html#L66" class="js-smell-location">1</a>                  <a href="game_of_life.html#L68" class="js-smell-location">2</a>                  <a href="game_of_life.html#L71" class="js-smell-location">3</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>GameOfLive#cells_rules calls '@init[hei][wid] == 1' 2 times</span>              <span>Locations:</span>                  <a href="game_of_life.html#L64" class="js-smell-location">0</a>                  <a href="game_of_life.html#L66" class="js-smell-location">1</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>GameOfLive#cells_rules calls '@init[hei][wid]' 4 times</span>              <span>Locations:</span>                  <a href="game_of_life.html#L64" class="js-smell-location">0</a>                  <a href="game_of_life.html#L66" class="js-smell-location">1</a>                  <a href="game_of_life.html#L68" class="js-smell-location">2</a>                  <a href="game_of_life.html#L71" class="js-smell-location">3</a>                  </div>  </li></ol>
                            0
                          elsif @init[hei][wid] == 1 &amp;&amp; neighbors &gt; 3<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>GameOfLive#cells_rules calls '@init[hei]' 4 times</span>              <span>Locations:</span>                  <a href="game_of_life.html#L64" class="js-smell-location">0</a>                  <a href="game_of_life.html#L66" class="js-smell-location">1</a>                  <a href="game_of_life.html#L68" class="js-smell-location">2</a>                  <a href="game_of_life.html#L71" class="js-smell-location">3</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>GameOfLive#cells_rules calls '@init[hei][wid] == 1' 2 times</span>              <span>Locations:</span>                  <a href="game_of_life.html#L64" class="js-smell-location">0</a>                  <a href="game_of_life.html#L66" class="js-smell-location">1</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>GameOfLive#cells_rules calls '@init[hei][wid]' 4 times</span>              <span>Locations:</span>                  <a href="game_of_life.html#L64" class="js-smell-location">0</a>                  <a href="game_of_life.html#L66" class="js-smell-location">1</a>                  <a href="game_of_life.html#L68" class="js-smell-location">2</a>                  <a href="game_of_life.html#L71" class="js-smell-location">3</a>                  </div>  </li></ol>
@@ -171,6 +171,15 @@ class GameOfLive
                          end
   end
 end
+
+puts &quot;Chose your height: &quot;
+userHeight = gets
+puts &quot;Choose your width: &quot;
+userWidth = gets
+
+newGame = GameOfLive.new(userHeight.to_i,userWidth.to_i)
+
+newGame.next_generation
 </code>
   </div>
 </div>

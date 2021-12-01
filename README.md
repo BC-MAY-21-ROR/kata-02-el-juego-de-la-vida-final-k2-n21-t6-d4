@@ -84,6 +84,7 @@ Generation 2:
 - Código fuente en Github (en la rama master)
 
 ## Setup
+<img src ="/badges/rubycritic_badge_score.svg">
 En [este elnace](setup/README.md) se describen los pasos necesarios para ejecutar/probar este proyecto.
 
 ## Resources
